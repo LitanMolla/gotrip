@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="lg:w-1/2">
             <Link to='/'><img src="/logo.png" alt="" /></Link>
-            <div className="flex gap-6 mt-8">
+            <div className="flex gap-6 mt-8 flex-wrap">
               <div className="">
                 <p className='text-sm'>Toll Free Customer Care</p>
                 <Link className='text-lg duration-300 hover:text-blue-500 font-medium'>+(1) 123 456 7890</Link>
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="mt-8">
               <p className=' mb-2'>Your all-in-one travel app</p>
-              <div className="flex gap-6">
+              <div className="flex gap-6 flex-wrap">
                 <Link className='rounded-sm px-5 py-2 bg-white/10'>
                   <span className='flex gap-2 items-center'>
                     <FaApple className='text-3xl' />
