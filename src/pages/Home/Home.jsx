@@ -7,6 +7,7 @@ import Adventure from './components/Adventure'
 import PopularDestinations from './components/PopularDestinations'
 import Testimonials from './components/Testimonials'
 import RecommendedActivity from './components/RecommendedActivity'
+import DownloadtheApp from './components/DownloadtheApp'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <PopularDestinations/>
         <Testimonials/>
         <RecommendedActivity/>
+        <DownloadtheApp/>
     </>
   )
 }
