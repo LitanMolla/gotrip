@@ -1,5 +1,3 @@
-import React from 'react'
-
 const FeatureCard = ({ feature }) => {
     const {image, title, details} = feature || {}
     return (

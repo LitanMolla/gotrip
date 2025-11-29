@@ -47,12 +47,10 @@ const buildMonth = (year, monthIndex) => {
   const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
   const cells = [];
 
-  // empty cells before 1st
   for (let i = 0; i < firstDay; i++) {
     cells.push(null);
   }
 
-  // month days
   for (let d = 1; d <= daysInMonth; d++) {
     cells.push(new Date(year, monthIndex, d));
   }

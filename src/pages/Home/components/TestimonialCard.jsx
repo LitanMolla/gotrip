@@ -1,5 +1,3 @@
-import React from 'react'
-
 const TestimonialCard = ({ testimonial }) => {
     const { quote, role, name } = testimonial || { }
     return (

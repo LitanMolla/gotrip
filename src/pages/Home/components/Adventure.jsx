@@ -1,4 +1,3 @@
-import React from 'react'
 import fire from '../../../assets/fire.png'
 import traveller from '../../../assets/traveller.png'
 import jeep from '../../../assets/jeep.png'

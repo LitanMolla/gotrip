@@ -17,50 +17,33 @@ const TrendingCard = ({ tour }) => {
 
     return (
         <div className="w-full rounded-lg overflow-hidden transition-shadow duration-300 bg-white group">
-            {/* Image Container */}
             <div className="relative h-64 overflow-hidden group">
                 <img
                     src={image || '/api/placeholder/400/320'}
                     alt={title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-
-                {/* Badge */}
                 {badge && (
                     <div className={`absolute top-4 left-4 px-3 py-1 text-xs font-bold rounded ${getBadgeStyles()}`}>
                         {badge}
                     </div>
                 )}
-
-                {/* Heart Icon */}
                 <button className="absolute top-4 right-4 p-2 bg-white rounded-full hover:bg-blue-600 hover:text-gray-100 transition-colors cursor-pointer duration-300">
                     <AiOutlineHeart className="w-5 h-5" />
                 </button>
             </div>
-
-            {/* Content */}
             <div className="">
-                {/* Duration */}
                 <p className="text-sm text-gray-600 my-2">{duration}</p>
-
-                {/* Title */}
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 hover:underline duration-300 cursor-pointer">
                     {title}
                 </h3>
-
-                {/* Location */}
                 <p className="text-sm text-gray-600 mb-3">{location}</p>
-
-                {/* Rating and Price */}
                 <div className="flex items-center justify-between">
-                    {/* Rating */}
                     <div className="flex items-center gap-1">
                         <AiFillStar className="w-4 h-4 text-yellow-400" />
                         <span className="text-sm font-semibold text-gray-900">{rating}</span>
                         <span className="text-sm text-gray-600">({reviewCount} reviews)</span>
                     </div>
-
-                    {/* Price */}
                     <div className="text-right flex items-center gap-1">
                         <p className="text-sm text-gray-600">From</p>
                         <p className="text-lg font-semibold text-gray-900">{currency}{price}</p>

@@ -1,28 +1,5 @@
-import React from 'react'
+import offers from '../../../lib/data/offers'
 import OffersCard from './OffersCard'
-const offers = [
-    {
-        image: 'https://creativelayers.net/themes/gotrip-html/img/features/1.png',
-        title: `Things To Do On Your Trip`,
-        badge: '',
-        target: '/',
-        targetLabel: 'Experiences'
-    },
-    {
-        image: 'https://creativelayers.net/themes/gotrip-html/img/features/2.png',
-        title: `Up To 70% Discount!`,
-        badge: 'Enjoy Summer Deals',
-        target: '/',
-        targetLabel: 'Learn More'
-    },
-    {
-        image: 'https://creativelayers.net/themes/gotrip-html/img/features/3.png',
-        title: `Let Your Vuriosity Do Yhe Booking`,
-        badge: '',
-        target: '/',
-        targetLabel: 'Learn More'
-    }
-]
 const SpecialOffers = () => {
     return (
         <div className='my-15 lg:my-30'>
