@@ -5,6 +5,8 @@ import SpecialOffers from './components/SpecialOffers'
 import TrendingActivity from './components/TrendingActivity'
 import Adventure from './components/Adventure'
 import PopularDestinations from './components/PopularDestinations'
+import Testimonials from './components/Testimonials'
+import RecommendedActivity from './components/RecommendedActivity'
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
         <TrendingActivity/>
         <Adventure/>
         <PopularDestinations/>
+        <Testimonials/>
+        <RecommendedActivity/>
     </>
   )
 }
