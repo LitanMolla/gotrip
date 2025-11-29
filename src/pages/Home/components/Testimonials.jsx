@@ -15,7 +15,7 @@ const Testimonials = () => {
 
                     <div className="flex gap-5 flex-wrap mt-10 justify-center">
                         {testimonials?.map((item, i) => (
-                            <div className={`${currrentTestimonial === item?.id && 'border'} rounded-full size-26 flex justify-center items-center`}>
+                            <div className={`${currrentTestimonial === item?.id && 'border'} rounded-full size-26 flex justify-center items-center`} key={item.id}>
                                 <button onClick={()=>setCurrrentTestimonial(item?.id)} key={i} className="size-21 overflow-hidden rounded-full cursor-pointer bg-transparent">
                                     <div className="h-full">
                                         <img className='w-full h-full  object-cover' src={item?.avatar} alt={item?.name} />
