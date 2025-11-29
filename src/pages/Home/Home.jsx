@@ -1,4 +1,3 @@
-import React from 'react'
 import Banner from './components/Banner'
 import FeaturesSection from './components/FeaturesSection'
 import SpecialOffers from './components/SpecialOffers'
@@ -8,6 +7,7 @@ import PopularDestinations from './components/PopularDestinations'
 import Testimonials from './components/Testimonials'
 import RecommendedActivity from './components/RecommendedActivity'
 import DownloadtheApp from './components/DownloadtheApp'
+import Inspiration from './components/Inspiration'
 
 const Home = () => {
   return (
@@ -21,6 +21,7 @@ const Home = () => {
         <Testimonials/>
         <RecommendedActivity/>
         <DownloadtheApp/>
+        <Inspiration/>
     </>
   )
 }
