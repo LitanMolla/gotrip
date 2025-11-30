@@ -3,7 +3,7 @@ import { FaWindowClose } from 'react-icons/fa'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { Link, NavLink } from 'react-router'
 
-const Navbar = () => {
+const Navbar = ({className}) => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [hiddenPages, setHiddenPages] = useState(true)
     const [isOpen, setisopen] = useState(false)
@@ -35,7 +35,7 @@ const Navbar = () => {
         <li><NavLink to='/contact' className={({ isActive }) => isActive ? 'text-gray-100' : 'text-gray-400 duration-300 hover:text-gray-100'}>Contact</NavLink></li>
     </>
     return (
-        <header className={`${isScrolled && 'bg-slate-900'} py-4 fixed top-0 left-0 w-full z-1000 duration-300`}>
+        <header className={`${isScrolled && 'bg-slate-900'} py-4 fixed top-0 left-0 w-full z-1000 duration-300 ${className}`}>
             <nav className="container">
                 <div className="flex justify-between items-center">
                     <Link className='text-gray-100' to='/'><img src="/logo.png" alt="Logo" /></Link>
