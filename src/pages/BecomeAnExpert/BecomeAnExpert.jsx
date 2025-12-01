@@ -1,3 +1,4 @@
+import FAQ from './components/FAQ'
 import Features from './components/Features'
 import Hero from './components/Hero'
 import HowDoesItWork from './components/HowDoesItWork'
@@ -9,6 +10,7 @@ const BecomeAnExpert = () => {
         <Hero/>
         <HowDoesItWork/>
         <LocalExpert/>
+        <FAQ/>
     </>
   )
 }
