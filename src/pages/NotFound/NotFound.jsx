@@ -9,8 +9,8 @@ const NotFound = () => {
     <>
       <div className="flex flex-col min-h-screen">
         <Navbar className='bg-slate-900' />
-        <div className="flex-1">
-          <div className='mt-30 lg:mt-30'>
+        <div className="flex-1 mt-10">
+          <div className='my-15 lg:my-30'>
             <div className="container">
               <div className="flex gap-6 items-center flex-col lg:flex-row">
                 <div className="lg:w-1/2">
@@ -28,7 +28,7 @@ const NotFound = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-900 py-16 mt-10 text-gray-100">
+            {/* <div className="bg-slate-900 py-16 mt-10 text-gray-100">
               <div className="container">
                 <div className="flex flex-col lg:flex-row gap-6">
                   <div className="lg:w-1/2">
@@ -50,7 +50,7 @@ const NotFound = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <Footer />

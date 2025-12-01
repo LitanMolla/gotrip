@@ -3,7 +3,7 @@ import { FaWindowClose } from 'react-icons/fa'
 import { FaBarsStaggered } from 'react-icons/fa6'
 import { Link, NavLink } from 'react-router'
 
-const Navbar = ({className}) => {
+const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [hiddenPages, setHiddenPages] = useState(true)
     const [isOpen, setisopen] = useState(false)
@@ -35,7 +35,7 @@ const Navbar = ({className}) => {
         <li><NavLink to='/contact' className={({ isActive }) => isActive ? 'text-gray-100' : 'text-gray-400 duration-300 hover:text-gray-100'}>Contact</NavLink></li>
     </>
     return (
-        <header className={`${isScrolled && 'bg-slate-900'} py-4 fixed top-0 left-0 w-full z-1000 duration-300 ${className}`}>
+        <header className={`${isScrolled && 'bg-slate-900'} py-4 fixed top-0 left-0 w-full z-1000 duration-300`}>
             <nav className="container">
                 <div className="flex justify-between items-center">
                     <Link className='text-gray-100' to='/'><img src="/logo.png" alt="Logo" /></Link>
@@ -44,8 +44,8 @@ const Navbar = ({className}) => {
                             {navMenu}
                         </ul>
                         <div className="flex gap-5 items-center">
-                            <button className='btn btn-primary hidden xl:block'>Become An Expert</button>
-                            <button className='btn btn-outline'>Sign In / Register</button>
+                            <Link to='/become-an-expert' className='btn btn-primary hidden xl:block'>Become An Expert</Link>
+                            <Link to='/login' className='btn btn-outline'>Sign In / Register</Link>
                         </div>
                     </div>
                     {/* mobile bar*/}
