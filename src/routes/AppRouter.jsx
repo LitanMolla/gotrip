@@ -6,6 +6,7 @@ import Home from '../pages/Home/Home'
 import Login from '../pages/Login/Login'
 import BecomeAnExpert from '../pages/BecomeAnExpert/BecomeAnExpert'
 import Contact from '../pages/Contact/Contact'
+import Blog from '../pages/Blog/Blog'
 
 const AppRouter = createBrowserRouter([
     {
@@ -28,7 +29,11 @@ const AppRouter = createBrowserRouter([
             {
                 path: 'contact',
                 Component: Contact
-            }
+            },
+            {
+                path: 'blog',
+                Component: Blog
+            },
         ]
     }
 ])

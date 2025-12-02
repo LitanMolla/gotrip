@@ -10,15 +10,6 @@ import FeaturesSection from "../Home/components/FeaturesSection";
 const Contact = () => {
     return (
         <div>
-            {/* Breadcrumb */}
-            <div className="container mt-20 mb-5">
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 text-sm lg:text-base">
-                    <p>{`Europe > United Kingdom (UK) > London`}</p>
-                    <p className="text-slate-700">London Tourism: Best of London</p>
-                </div>
-            </div>
-
-            {/* Map (container er baire, full width) */}
             <div className="mt-8 lg:mt-12">
                 <iframe
                     className="w-full h-[260px] sm:h-[320px] lg:h-[420px]"
@@ -29,8 +20,6 @@ const Contact = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                 />
             </div>
-
-            {/* Form */}
             <div
                 className="
           container mx-auto px-4
@@ -91,8 +80,6 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-
-            {/* Contact info bottom */}
             <div className="container">
                 <h2 className="text-2xl lg:text-3xl font-semibold text-slate-900 mb-8">
                     Contact Us
@@ -109,24 +96,18 @@ const Contact = () => {
                             Melbourne VIC 3051, Australia.
                         </p>
                     </div>
-
-                    {/* Toll Free */}
                     <div>
                         <p className="text-sm text-slate-400">Toll Free Customer Care</p>
                         <p className="font-semibold text-slate-900 mt-2">
                             +(1) 123 456 7890
                         </p>
                     </div>
-
-                    {/* Support Email */}
                     <div>
                         <p className="text-sm text-slate-400">Need live support?</p>
                         <p className="font-semibold text-slate-900 mt-2">
                             hi@gotrip.com
                         </p>
                     </div>
-
-                    {/* Social Media */}
                     <div>
                         <p className="text-sm text-slate-400">Follow us on social media</p>
                         <div className="flex items-center gap-4 mt-3 text-slate-900 text-xl">
