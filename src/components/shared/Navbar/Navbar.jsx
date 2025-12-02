@@ -14,7 +14,7 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
-    console.log(isOpen)
+    // console.log(isOpen)
     const navMenu = <>
         <li><NavLink to='/' className={({ isActive }) => isActive ? 'text-gray-100' : 'text-gray-400 duration-300 hover:text-gray-100'}>Home</NavLink></li>
         <li><NavLink to='/categories' className={({ isActive }) => isActive ? 'text-gray-100' : 'text-gray-400 duration-300 hover:text-gray-100'}>Categories</NavLink></li>
